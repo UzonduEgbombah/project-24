@@ -41,6 +41,7 @@ At this point you already have some Terraform experience. So, you have some work
 - Create a file - network.tf and provision Elastic IP for Nat Gateway, VPC, Private and public subnets.
 
 
+```sh
 resource "aws_eip" "nat_gw_elastic_ip" {
   vpc = true
 
@@ -93,6 +94,7 @@ module "vpc" {
     iac_environment                             = var.iac_environment_tag
   }
 }
+```
 
 
 Note:
